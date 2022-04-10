@@ -2,7 +2,7 @@ name: build
 on:
   push:
     branches:
-      - 9.2.x
+      - stage
 
 # Environment variables available to all jobs and steps in this workflow
 env:
