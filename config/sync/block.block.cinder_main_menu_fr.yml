@@ -1,0 +1,35 @@
+uuid: 86e38a70-f8b6-48df-b955-5affc3155eaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main_fr
+  module:
+    - language
+    - system
+  theme:
+    - cinder
+_core:
+  default_config_hash: C65icQs4o9SfFG9-rLd0VyCD9mesl2Ro_8y1_YtpYqw
+id: cinder_main_menu_fr
+theme: cinder
+region: navigation
+weight: -8
+provider: null
+plugin: 'system_menu_block:main_fr'
+settings:
+  id: 'system_menu_block:main_fr'
+  label: 'Menu principal'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility:
+  language:
+    id: language
+    langcodes:
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

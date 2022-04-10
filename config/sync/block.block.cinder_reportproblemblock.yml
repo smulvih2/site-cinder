@@ -1,0 +1,49 @@
+uuid: 7d400abd-6509-46d0-87a2-405f67990995
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.gcweb_report_a_problem
+  enforced:
+    module:
+      - wxt_ext_webform
+  module:
+    - block_class
+    - wxt_ext_webform
+    - wxt_library
+  theme:
+    - cinder
+third_party_settings:
+  block_class:
+    classes: 'col-sm-6 col-md-5 col-lg-4'
+_core:
+  default_config_hash: 2pdAmWUAAJE4zXNLRJF38g2Ls7aMuTWXGWwxTyijAhk
+id: cinder_reportproblemblock
+theme: cinder
+region: content_footer
+weight: -9
+provider: null
+plugin: report_problem_block
+settings:
+  id: report_problem_block
+  label: 'Report Problem block'
+  provider: wxt_ext_webform
+  label_display: '0'
+  webform_id: gcweb_report_a_problem
+  inline_webform: 1
+  report_problem_settings:
+    webform_id: ''
+    default_data: ''
+    redirect: false
+  default_data:
+    webform_id: contact
+    default_data: ''
+    redirect: true
+  redirect: true
+visibility:
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+    is_panelized: {  }

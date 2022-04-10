@@ -1,0 +1,18 @@
+/* Global styles */
+
+header {
+	.logo {
+		img {
+			width: 100%
+		}
+	}
+}
+
+// Above mobile
+@media (min-width: 768px) {
+	header {
+		.logo {
+			margin: -20px 0px 0px 0px;
+		}
+	}
+}

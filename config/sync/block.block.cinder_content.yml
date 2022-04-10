@@ -1,0 +1,22 @@
+uuid: 2bb4ec66-e7a5-4780-8154-d8d8be790e14
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cinder
+_core:
+  default_config_hash: tKnxXzEgiZt4P1kSKifNzbrryhog9XteiDVXbdjt0rc
+id: cinder_content
+theme: cinder
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,43 @@
+uuid: 255d7926-5621-42c3-8e24-bca62d052688
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - wxt_library
+  theme:
+    - cinder
+third_party_settings:
+  block_class:
+    classes: 'col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5'
+_core:
+  default_config_hash: yOaMdyTSoudqEhBTXETB_P2ny-hmAdvGCqmuydv4oB8
+id: cinder_sharewidgetblock
+theme: cinder
+region: content_footer
+weight: -8
+provider: null
+plugin: share_widget_block
+settings:
+  id: share_widget_block
+  label: 'Share widget block'
+  provider: wxt_library
+  label_display: '0'
+  share_settings:
+    share_widget: ''
+  share_widget:
+    blogger: blogger
+    diigo: diigo
+    email: email
+    facebook: facebook
+    gmail: gmail
+    linkedin: linkedin
+    myspace: myspace
+    pinterest: pinterest
+    reddit: reddit
+    tinyurl: tinyurl
+    tumblr: tumblr
+    twitter: twitter
+    whatsapp: whatsapp
+    yahoomail: yahoomail
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 44a3a31d-fa83-4f8f-a41e-54d6a9363b3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - group
+  theme:
+    - cinder
+_core:
+  default_config_hash: bDzObGld8xhHRRwNmSEl2EAm_zypl0KeVNZtzc_Jo-U
+id: cinder_groupoperations
+theme: cinder
+region: sidebar_first
+weight: -10
+provider: null
+plugin: group_operations
+settings:
+  id: group_operations
+  label: 'Group operations'
+  provider: group
+  label_display: visible
+  context_mapping:
+    group: '@group.group_route_context:group'
+visibility:
+  'entity_bundle:group':
+    id: 'entity_bundle:group'
+    bundles:
+      department: department
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'

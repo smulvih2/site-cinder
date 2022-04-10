@@ -1,0 +1,44 @@
+schemas:
+  bootstrap: 8000
+  wxt_bootstrap: 8000
+  cinder: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: profiles/wxt/favicon.ico
+  url: 'http://localhost/profiles/wxt/favicon.ico'
+  use_default: 0
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/custom/cinder/images/cinder-systems-corp-drupal-consulting-ottawa.png
+  url: ''
+  use_default: 0
+wxt_skip_link_primary_text: 'Skip to main content'
+wxt_skip_link_secondary_text: 'Skip to "About government"'
+table_responsive: '-1'
+region_wells:
+  branding: ''
+  breadcrumb: ''
+  language_toggle: ''
+  banner: ''
+  search: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  content_footer: ''
+  sidebar_first: ''
+  sidebar_second: well
+  footer: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''

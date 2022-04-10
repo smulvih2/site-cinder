@@ -1,0 +1,35 @@
+uuid: 4d839efe-7424-4c93-ad84-1968f4dcb348
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer_fr
+  module:
+    - language
+    - system
+  theme:
+    - cinder
+_core:
+  default_config_hash: k-u79ESm0KXAIHOjWiHTulaIYIJxBkSqV747fjiJmx8
+id: cinder_footer_fr
+theme: cinder
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer_fr'
+settings:
+  id: 'system_menu_block:footer_fr'
+  label: 'Pied de page'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  language:
+    id: language
+    langcodes:
+      fr: fr
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

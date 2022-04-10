@@ -1,0 +1,22 @@
+uuid: a1123350-2442-46d1-bf52-0bd261b67706
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cinder
+_core:
+  default_config_hash: Jx3NwD_ieAzJWK8hQ-N23eqTllZrvEbm_slIFl0jf1g
+id: cinder_breadcrumbs
+theme: cinder
+region: breadcrumb
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

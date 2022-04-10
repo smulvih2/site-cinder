@@ -1,0 +1,35 @@
+uuid: b38e1c15-9882-473e-b88b-5b14da0647e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.brand
+  module:
+    - language
+    - system
+  theme:
+    - cinder
+_core:
+  default_config_hash: 1cKa1JLGtCotbuNUYWmaNhkkee3kw8DOs78zTENJ4A4
+id: cinder_brand
+theme: cinder
+region: branding
+weight: 0
+provider: null
+plugin: 'system_menu_block:brand'
+settings:
+  id: 'system_menu_block:brand'
+  label: 'About this site'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

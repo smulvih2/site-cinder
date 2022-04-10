@@ -1,0 +1,25 @@
+uuid: 14e411b1-5742-4e3e-ac70-f2c573476054
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cinder
+_core:
+  default_config_hash: Ay7JxVDkyzI58DHuuz5I5ZzGsktewzwPp8AorHybNkQ
+id: cinder_sitebranding
+theme: cinder
+region: banner
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

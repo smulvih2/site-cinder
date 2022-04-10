@@ -5,9 +5,13 @@ scripts/drupal
 files_private/
 
 # Composer files
-html/
+html/*
+html/themes/*
+html/themes/contrib
 !html/themes
 !html/themes/custom
+!html/themes/custom/
+!html/themes/custom/*
 vendor
 */*/*/vendor
 */*/vendor
