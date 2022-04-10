@@ -1,0 +1,14 @@
+name: 'Cinder Systems Corp.'
+mail: smulvih2@gmail.com
+slogan: 'Collaborative open source project led by the Government of Canada'
+page:
+  403: /system/404
+  404: /system/404
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: uNOHaKWnoIbi-Q7d7NTqX2PeF_cwCaM9tTmwBoM2COA
+uuid: a331be99-f3eb-4c1f-ba5c-2b89c55f8894

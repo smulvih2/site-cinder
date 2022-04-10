@@ -1,0 +1,17 @@
+uuid: d149e11b-2709-44d2-8040-0bd454a4dc19
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.department
+  enforced:
+    config:
+      - user.role.creator
+id: department-ac775f3f5
+label: Creator
+weight: 3
+internal: true
+audience: outsider
+group_type: department
+permissions_ui: false
+permissions: {  }

@@ -1,0 +1,18 @@
+uuid: d8a64aae-50b1-4d20-b57e-0ba4f29a49ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.langcode
+field_name: langcode
+entity_type: media
+bundle: image
+label: Language
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: language

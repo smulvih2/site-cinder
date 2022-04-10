@@ -1,0 +1,10 @@
+uuid: 22faba3b-82d1-47e0-aa4c-d309c3f65306
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zTDokwtzF3_o7ws3FdD_oo6qpd2C0zSKSYjXnwBUFDg
+id: sidebar_fr
+label: 'Barre latérale'
+description: 'Liens de la barre latérale.'
+locked: true

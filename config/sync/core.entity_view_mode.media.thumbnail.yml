@@ -1,0 +1,16 @@
+uuid: ba92bdb1-7460-49d1-bc65-ccd95e41b5a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - media
+third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: f_DojbcC2b9kUiXE-CtRR_l61_Njy68gJMsP4M_6F6w
+id: media.thumbnail
+label: Thumbnail
+targetEntityType: media
+cache: true

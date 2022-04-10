@@ -1,0 +1,22 @@
+uuid: 8b35d3b9-fff5-4891-9b47-fd1ad8139e6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_link_content.default_langcode
+field_name: default_langcode
+entity_type: menu_link_content
+bundle: menu_link_content
+label: 'Default translation'
+description: 'A flag indicating whether this is the default translation.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

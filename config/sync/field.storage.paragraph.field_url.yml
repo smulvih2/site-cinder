@@ -1,0 +1,21 @@
+uuid: 1ddcdb81-8747-4a3c-b259-ea7f8b1e8d5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: qadmik-JYJ4xzKtNvLo9pyieX59jfxdSB8LHF9xOqTI
+id: paragraph.field_url
+field_name: field_url
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
