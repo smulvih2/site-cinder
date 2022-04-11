@@ -6,12 +6,17 @@ header .logo img {
 }
 
 /* line 11, ../sass/components/_global.scss */
+.cinder-section {
+  font-size: 0.8em;
+}
+
+/* line 15, ../sass/components/_global.scss */
 .header-rwd {
   opacity: 0.95;
 }
 
 @media (min-width: 768px) {
-  /* line 18, ../sass/components/_global.scss */
+  /* line 22, ../sass/components/_global.scss */
   header .logo {
     margin: -20px 0px 0px 0px;
   }
