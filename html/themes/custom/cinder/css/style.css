@@ -5,8 +5,13 @@ header .logo img {
   width: 100%;
 }
 
+/* line 11, ../sass/components/_global.scss */
+.header-rwd {
+  opacity: 0.95;
+}
+
 @media (min-width: 768px) {
-  /* line 14, ../sass/components/_global.scss */
+  /* line 18, ../sass/components/_global.scss */
   header .logo {
     margin: -20px 0px 0px 0px;
   }
