@@ -8,7 +8,7 @@
     "require": {
         "cweagans/composer-patches": "^1.6.0",
         "drupal/core-composer-scaffold": "*",
-        "drupalwxt/wxt": "4.2.x-dev",
+        "drupalwxt/wxt": "4.2.3",
         "drush/drush": ">=9.7",
         "oomphinc/composer-installers-extender": "^1.1 || ^2",
         "drupal/backup_migrate": "^5.0"
@@ -91,11 +91,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "drupal/wxt_bootstrap": {
-                "3274502 - Search form layout issue": "https://www.drupal.org/files/issues/2022-04-10/wxt-bootstrap-fix-search-form-classes-3274502-2.patch"
-            }
-        },
+        "patches": { },
         "patches-ignore": {
             "acquia/lightning": {
                 "drupal/core": {
