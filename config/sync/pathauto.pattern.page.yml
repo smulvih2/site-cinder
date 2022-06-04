@@ -7,18 +7,19 @@ dependencies:
 _core:
   default_config_hash: jmdoDPmY1UEvEtZONRMyoe9QorMmqPHAc2nfbgJBjRM
 id: page
-label: 'Basic page'
+label: Page
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  00e43b31-d51e-4793-bd28-952604955d73:
+  a79faab2-aba2-41f4-8b8e-e8f943383448:
     id: node_type
     bundles:
+      book: book
       page: page
     negate: false
     context_mapping:
       node: node
-    uuid: 00e43b31-d51e-4793-bd28-952604955d73
+    uuid: a79faab2-aba2-41f4-8b8e-e8f943383448
 selection_logic: and
 weight: -5
 relationships: {  }
