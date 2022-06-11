@@ -1,3 +1,4 @@
+uuid: 33921354-687e-462b-a1d5-2f40d5a67500
 langcode: en
 status: true
 dependencies:
@@ -11,6 +12,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+_core:
+  default_config_hash: 2gWGA-X4ERc4McStS7cMEG3ZBpDEqfNRDPTjB1v674Y
 name: 'Book page'
 type: book
 description: '<em>Books</em> have a built-in hierarchical navigation (GC Subway).'
@@ -18,6 +21,3 @@ help: ''
 new_revision: true
 preview_mode: 1
 display_submitted: false
-_core:
-  default_config_hash: 2gWGA-X4ERc4McStS7cMEG3ZBpDEqfNRDPTjB1v674Y
-uuid: 33921354-687e-462b-a1d5-2f40d5a67500
