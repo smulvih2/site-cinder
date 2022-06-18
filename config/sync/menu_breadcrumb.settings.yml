@@ -1,4 +1,4 @@
-determine_menu: true
+determine_menu: false
 disable_admin_page: true
 append_current_page: false
 current_page_as_link: false
@@ -13,15 +13,65 @@ exclude_disabled_menu_items: false
 derived_active_trail: false
 menu_breadcrumb_menus:
   main:
-    enabled: 1
     weight: -10
-    langhandle: 1
+    enabled: 0
     taxattach: 0
-  main_fr:
-    enabled: 1
-    langhandle: 1
+    langhandle: 0
+  admin:
     weight: 0
+    enabled: 0
     taxattach: 0
+    langhandle: 0
+  sidebar_fr:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  brand:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  devel:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  footer:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  brand_fr:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  main_fr:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  footer_fr:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  sidebar:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  tools:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
+  account:
+    weight: 0
+    enabled: 0
+    taxattach: 0
+    langhandle: 0
 _core:
   default_config_hash: B_6w2RYqF6vEA_QZ8-0LRUI0AqnS4NZuQqlO9rXwfJs
 home_as_site_name: false
