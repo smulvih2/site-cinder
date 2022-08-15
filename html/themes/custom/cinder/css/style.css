@@ -21,3 +21,9 @@ header .logo img {
     margin: -20px 0px 0px 0px;
   }
 }
+/* line 28, ../sass/components/_global.scss */
+#wb-info .brand img {
+  height: unset;
+  max-width: 100%;
+  mix-blend-mode: multiply;
+}

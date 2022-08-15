@@ -24,3 +24,9 @@ header {
 		}
 	}
 }
+
+#wb-info .brand img {
+	height: unset;
+	max-width: 100%;
+	mix-blend-mode: multiply;
+}
