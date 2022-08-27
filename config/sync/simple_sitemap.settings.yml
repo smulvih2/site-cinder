@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: fFCOUWimqdj2E7qYCcYmI2LH7rwpaLEUOfi69hUFuXk
 max_links: 2000
 cron_generate: true
 cron_generate_interval: 0
@@ -13,8 +15,6 @@ enabled_entity_types:
   - node
   - user
 entities_per_queue_item: 50
-_core:
-  default_config_hash: fFCOUWimqdj2E7qYCcYmI2LH7rwpaLEUOfi69hUFuXk
 entity_types:
   node:
     page:

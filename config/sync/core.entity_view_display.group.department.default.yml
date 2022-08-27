@@ -13,21 +13,21 @@ bundle: department
 mode: default
 content:
   field_shortcode:
-    weight: -4
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: -4
     region: content
   label:
-    label: hidden
     type: string
-    weight: -5
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: -5
+    region: content
 hidden:
   changed: true
   created: true

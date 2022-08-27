@@ -7,6 +7,7 @@ ckeditor_codemirror: 2.3.0
 ckeditor_details: 2.0.3
 config: 9.2.13
 datetime: 9.2.13
+devel: 4.1.5
 dropzonejs: 2.5.0
 entity: 1.2.0
 entity_browser: 2.6.0

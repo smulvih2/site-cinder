@@ -1,3 +1,4 @@
+uuid: df7d00b4-bdd9-44c2-8757-dfb920259bc1
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
     - node.type.webform
   module:
     - webform
+_core:
+  default_config_hash: w6hvTj8CaO8YVQDnlsD-jRBzMA_vNmx2cXLEKX13yT4
 id: node.webform.webform
 field_name: webform
 entity_type: node
@@ -16,16 +19,13 @@ required: false
 translatable: false
 default_value:
   -
+    target_uuid: ''
     default_data: ''
     status: open
     open: ''
     close: ''
-    target_uuid: ''
 default_value_callback: ''
 settings:
   handler: 'default:webform'
   handler_settings: {  }
 field_type: webform
-_core:
-  default_config_hash: w6hvTj8CaO8YVQDnlsD-jRBzMA_vNmx2cXLEKX13yT4
-uuid: df7d00b4-bdd9-44c2-8757-dfb920259bc1

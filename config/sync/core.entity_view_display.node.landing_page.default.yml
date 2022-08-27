@@ -19,8 +19,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: true
+    allow_custom: false
     sections:
       -
         layout_id: layout_onecol
@@ -32,12 +32,13 @@ third_party_settings:
     enable: true
   layout_builder_restrictions:
     entity_view_mode_restriction:
-      whitelisted_blocks: {  }
       allowed_layouts:
         - layout_onecol
         - layout_twocol_section
         - layout_threecol_section
         - layout_fourcol_section
+      denylisted_blocks: null
+      allowlisted_blocks: {  }
 _core:
   default_config_hash: LSefcEOqN7djHmmcvteasL4ahegCSrEj1l0YLmj8vyY
 id: node.landing_page.default
@@ -47,11 +48,11 @@ mode: default
 content:
   field_meta_tags:
     type: metatag_empty_formatter
-    region: content
     label: hidden
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   field_queue: true

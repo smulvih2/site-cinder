@@ -128,13 +128,13 @@ filters:
     status: false
     weight: -34
     settings:
-      filter_tags:
-        img: img
-        iframe: iframe
       media_switch: ''
       hybrid_style: ''
       box_style: ''
       box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
       use_data_uri: '0'
   filter_footnotes:
     id: filter_footnotes

@@ -13,12 +13,12 @@ bundle: department-group_membership
 mode: default
 content:
   group_roles:
-    label: above
     type: entity_reference_label
+    label: above
     settings:
       link: false
-    weight: -4
     third_party_settings: {  }
+    weight: -4
     region: content
 hidden:
   entity_id: true

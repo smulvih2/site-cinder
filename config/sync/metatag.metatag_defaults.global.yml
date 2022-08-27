@@ -1,6 +1,9 @@
+uuid: da871234-cf02-4379-95a9-138a853a136c
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
 id: global
 label: Global
 tags:
@@ -8,6 +11,3 @@ tags:
   canonical_url: '[current-page:url]'
   dcterms_title: '[current-page:title]'
   dcterms_language: '[language:langcode]'
-_core:
-  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
-uuid: da871234-cf02-4379-95a9-138a853a136c

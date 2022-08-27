@@ -1,3 +1,4 @@
+uuid: 2f112929-b9cc-42a5-ace1-d7fb36f8a3ae
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - filter.format.rich_text
   module:
     - ckeditor
+_core:
+  default_config_hash: heCSHfqc7ODs3Yj-2KDI3jSFaF9SCLgv8_LKR2Gt9Dg
 format: rich_text
 editor: ckeditor
 settings:
@@ -91,6 +94,3 @@ image_upload:
   max_dimensions:
     width: null
     height: null
-_core:
-  default_config_hash: heCSHfqc7ODs3Yj-2KDI3jSFaF9SCLgv8_LKR2Gt9Dg
-uuid: 2f112929-b9cc-42a5-ace1-d7fb36f8a3ae

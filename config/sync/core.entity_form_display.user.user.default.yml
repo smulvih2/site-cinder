@@ -31,32 +31,32 @@ content:
   field_first_name:
     type: string_textfield
     weight: 31
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   field_last_name:
     type: string_textfield
     weight: 32
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   field_last_password_reset:
     type: datetime_default
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_password_expiration:
     type: boolean_checkbox
     weight: 3
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    region: content
   language:
     weight: 0
     region: content
@@ -71,12 +71,12 @@ content:
     region: content
   user_picture:
     type: image_image
+    weight: -1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
-    region: content
 hidden:
   field_pending_expire_sent: true
   langcode: true

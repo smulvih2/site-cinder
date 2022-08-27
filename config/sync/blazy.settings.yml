@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: AKaOOvJLdUkliE4Pd3O_SJznkKMkdNbVL0Gqmry1tXs
 admin_css: true
 nojs:
   lazy: '0'
@@ -7,11 +9,10 @@ nojs:
   raf: '0'
 fx: ''
 noscript: false
-responsive_image: false
 one_pixel: true
 placeholder: ''
 unstyled_extensions: ''
-extras: {  }
+responsive_image: false
 blazy:
   loadInvisible: false
   offset: 100
@@ -23,5 +24,4 @@ io:
   rootMargin: 0px
   threshold: '0'
   disconnect: false
-_core:
-  default_config_hash: AKaOOvJLdUkliE4Pd3O_SJznkKMkdNbVL0Gqmry1tXs
+extras: {  }

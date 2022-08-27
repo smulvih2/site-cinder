@@ -1,12 +1,12 @@
+uuid: 98966475-3ff4-4cad-abb1-2b4ea9d4d5e2
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
 id: front
 label: 'Front page'
 tags:
   canonical_url: '[site:url]'
   title: '[site:name]'
   shortlink: '[site:url]'
-_core:
-  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
-uuid: 98966475-3ff4-4cad-abb1-2b4ea9d4d5e2

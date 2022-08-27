@@ -2,11 +2,11 @@ uuid: 7cf8c226-b315-4eae-947a-54aa2c378d28
 langcode: en
 status: false
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - book
-  module:
-    - node
 _core:
   default_config_hash: ERjobPGdPFAM9p5cmQIcJzk-0cY-1mE1OV_pKmMlJaE
 id: node.print

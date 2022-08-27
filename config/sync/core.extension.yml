@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
@@ -26,6 +28,7 @@ module:
   core_context: 0
   ctools: 0
   datetime: 0
+  devel: 0
   diff: 0
   dropzonejs: 0
   dynamic_page_cache: 0
@@ -62,20 +65,6 @@ module:
   layout_builder_styles: 0
   layout_discovery: 0
   layout_library: 0
-  lightning_core: 0
-  lightning_landing_page: 0
-  lightning_layout: 0
-  lightning_media: 0
-  lightning_media_audio: 0
-  lightning_media_bulk_upload: 0
-  lightning_media_document: 0
-  lightning_media_image: 0
-  lightning_media_instagram: 0
-  lightning_media_slideshow: 0
-  lightning_media_twitter: 0
-  lightning_media_video: 0
-  lightning_page: 0
-  lightning_workflow: 0
   link: 0
   linkit: 0
   locale: 0
@@ -147,7 +136,14 @@ module:
   wxt_ext_landing_page: 0
   wxt_ext_layout: 0
   wxt_ext_media: 0
+  wxt_ext_media_audio: 0
+  wxt_ext_media_bulk_upload: 0
+  wxt_ext_media_document: 0
+  wxt_ext_media_image: 0
+  wxt_ext_media_instagram: 0
   wxt_ext_media_slideshow: 0
+  wxt_ext_media_twitter: 0
+  wxt_ext_media_video: 0
   wxt_ext_metatag: 0
   wxt_ext_migration: 0
   wxt_ext_page: 0
@@ -161,6 +157,7 @@ module:
   wxt_ext_theme: 0
   wxt_ext_user: 0
   wxt_ext_webform: 0
+  wxt_ext_workflow: 0
   wxt_library: 0
   wxt_translation: 0
   pathauto: 1
@@ -176,5 +173,3 @@ theme:
   wxt_bootstrap: 0
   cinder: 0
 profile: wxt
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

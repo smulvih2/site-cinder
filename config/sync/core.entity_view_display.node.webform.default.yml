@@ -1,3 +1,4 @@
+uuid: fa828929-94ce-46e5-8c6d-cbef14781624
 langcode: en
 status: true
 dependencies:
@@ -10,33 +11,32 @@ dependencies:
     - user
     - webform
 third_party_settings: {  }
+_core:
+  default_config_hash: 3r1i0UMUbeNHhvmiqHDYznoS4G9XR1jq6lQ49r80lDE
 id: node.webform.default
 targetEntityType: node
 bundle: webform
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
   webform:
-    weight: 102
+    type: webform_entity_reference_entity_view
     label: hidden
     settings:
       source_entity: true
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
+    weight: 102
     region: content
 hidden:
   langcode: true
-_core:
-  default_config_hash: 3r1i0UMUbeNHhvmiqHDYznoS4G9XR1jq6lQ49r80lDE
-uuid: fa828929-94ce-46e5-8c6d-cbef14781624

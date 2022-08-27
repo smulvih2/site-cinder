@@ -1,4 +1,4 @@
-uuid: ce85558d-1ff0-40f4-9ead-45c386b86dc5
+uuid: ec9b2d13-941c-4114-9e49-c96594ce4402
 langcode: en
 status: true
 dependencies:
@@ -11,10 +11,10 @@ dependencies:
     - media.type.image
   module:
     - image
-    - lightning_media
     - path
+    - wxt_ext_media
 _core:
-  default_config_hash: 1U5XavhCARUa63Cs1qKuE5u_UOMDj8jqZoJ2jVWdfw0
+  default_config_hash: Xfxu1jtMsgTgBtfLkd5Mf2v-5b6VUX_3-ZwrIi16mCI
 id: media.image.media_browser
 targetEntityType: media
 bundle: image
@@ -23,21 +23,21 @@ content:
   field_media_image:
     type: image_image
     weight: 0
+    region: content
     settings:
-      preview_image_style: medium
       progress_indicator: throbber
+      preview_image_style: medium
     third_party_settings:
-      lightning_media:
+      wxt_ext_media:
         file_links: false
         remove_button: false
-    region: content
   field_media_in_library:
     type: boolean_checkbox
     weight: 4
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -48,11 +48,11 @@ content:
   name:
     type: string_textfield
     weight: 3
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 30
@@ -62,26 +62,24 @@ content:
   revision_log_message:
     type: string_textarea
     weight: 25
+    region: content
     settings:
       rows: 4
       placeholder: ''
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
-    third_party_settings: {  }
-  field_image_link:
-    type: link_default
-    weight: 1
-    region: content
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
+      display_label: true
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden:
   created: true
+  field_image_link: true
   uid: true

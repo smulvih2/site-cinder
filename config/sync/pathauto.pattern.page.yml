@@ -12,14 +12,14 @@ type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
   a79faab2-aba2-41f4-8b8e-e8f943383448:
-    id: node_type
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: a79faab2-aba2-41f4-8b8e-e8f943383448
+    context_mapping:
+      node: node
     bundles:
       book: book
       page: page
-    negate: false
-    context_mapping:
-      node: node
-    uuid: a79faab2-aba2-41f4-8b8e-e8f943383448
 selection_logic: and
 weight: -5
 relationships: {  }

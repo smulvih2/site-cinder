@@ -1,7 +1,7 @@
-allowed_type_book: 1
+_core:
+  default_config_hash: ktZU13ICvnZ4TMRqAPdSBtlHPmyEoQVROVgrvKab_O0
 block:
   navigation:
     mode: 'all pages'
+allowed_type_book: 1
 child_type_book: book
-_core:
-  default_config_hash: ktZU13ICvnZ4TMRqAPdSBtlHPmyEoQVROVgrvKab_O0

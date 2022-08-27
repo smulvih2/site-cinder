@@ -1,3 +1,4 @@
+uuid: 335e7487-6b1b-436d-a35d-f5b43d84a30f
 langcode: en
 status: true
 dependencies:
@@ -10,27 +11,26 @@ dependencies:
     - text
     - user
 third_party_settings: {  }
+_core:
+  default_config_hash: Ls5l3Xs7-YstJnurxFLKj38Exqr2JMZs1j9YeX1Kh2o
 id: node.webform.teaser
 targetEntityType: node
 bundle: webform
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   langcode: true
   webform: true
-_core:
-  default_config_hash: Ls5l3Xs7-YstJnurxFLKj38Exqr2JMZs1j9YeX1Kh2o
-uuid: 335e7487-6b1b-436d-a35d-f5b43d84a30f

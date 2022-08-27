@@ -1,3 +1,4 @@
+uuid: 6bb565b3-8189-4894-b809-e3ac6739021f
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - field.storage.node.field_blog_tags
     - node.type.blog_post
     - taxonomy.vocabulary.blog_freetags
+_core:
+  default_config_hash: rZwrrJiuAr4tD2joj78D6GDyfBcNBWNKHFhz8Ze4pEA
 id: node.blog_post.field_blog_tags
 field_name: field_blog_tags
 entity_type: node
@@ -25,6 +28,3 @@ settings:
     auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
-_core:
-  default_config_hash: rZwrrJiuAr4tD2joj78D6GDyfBcNBWNKHFhz8Ze4pEA
-uuid: 6bb565b3-8189-4894-b809-e3ac6739021f

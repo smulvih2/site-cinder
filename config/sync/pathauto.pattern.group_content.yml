@@ -1,8 +1,11 @@
+uuid: 31563cbc-7767-440a-b40c-7b7f2300a5c7
 langcode: en
 status: true
 dependencies:
   module:
     - group
+_core:
+  default_config_hash: rk2G0ozgUlKP7ic1RRjMcXUmeZxXUKPV-q-brekIKMc
 id: group_content
 label: 'Group content'
 type: 'canonical_entities:group_content'
@@ -13,6 +16,3 @@ weight: -6
 relationships:
   'group_content:langcode:language':
     label: Language
-_core:
-  default_config_hash: rk2G0ozgUlKP7ic1RRjMcXUmeZxXUKPV-q-brekIKMc
-uuid: 31563cbc-7767-440a-b40c-7b7f2300a5c7

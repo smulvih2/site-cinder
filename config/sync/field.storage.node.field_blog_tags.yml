@@ -7,6 +7,9 @@ dependencies:
     - taxonomy
     - node
     - taxonomy
+  enforced:
+    module:
+      - blog
 _core:
   default_config_hash: WggNhcxhnM87JTA5WLoi1aaZF0DJ240auElziCFrLC8
 id: node.field_blog_tags

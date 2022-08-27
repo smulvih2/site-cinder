@@ -12,13 +12,13 @@ type: 'canonical_entities:node'
 pattern: 'blog/[node:title]'
 selection_criteria:
   c1618a16-cc16-41ec-b893-7b0336d91971:
-    id: node_type
-    bundles:
-      blog_post: blog_post
+    id: 'entity_bundle:node'
     negate: false
+    uuid: c1618a16-cc16-41ec-b893-7b0336d91971
     context_mapping:
       node: node
-    uuid: c1618a16-cc16-41ec-b893-7b0336d91971
+    bundles:
+      blog_post: blog_post
 selection_logic: and
 weight: -9
 relationships: {  }

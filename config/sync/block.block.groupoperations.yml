@@ -19,15 +19,15 @@ plugin: group_operations
 settings:
   id: group_operations
   label: 'Group operations'
-  provider: group
   label_display: visible
+  provider: group
   context_mapping:
     group: '@group.group_route_context:group'
 visibility:
   'entity_bundle:group':
     id: 'entity_bundle:group'
-    bundles:
-      department: department
     negate: false
     context_mapping:
       group: '@group.group_route_context:group'
+    bundles:
+      department: department
