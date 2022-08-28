@@ -17,8 +17,6 @@ display:
             next: 'Suivant ›'
             first: '« Premier'
             last: 'Dernier »'
-      fields:
-        title: {  }
   blog_block:
     display_title: Bloc
   blog_user_all:

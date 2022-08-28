@@ -12,8 +12,8 @@ third_party_settings:
   content_translation:
     translation_sync:
       alt: alt
-      title: title
       file: '0'
+      title: '0'
 _core:
   default_config_hash: 3g7lQVYQWL17PrdVRpz7dq-U8mpCFrcsWSNwRRs0Qb0
 id: node.blog_post.field_image
@@ -23,7 +23,7 @@ bundle: blog_post
 label: Image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -35,7 +35,7 @@ settings:
   max_resolution: ''
   min_resolution: ''
   alt_field: true
-  alt_field_required: true
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

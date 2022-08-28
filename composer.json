@@ -93,7 +93,14 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": { },
+        "patches": {
+            "drupal/wxt_bootstrap": {
+                "3306505 - Blog listing page": "https://www.drupal.org/files/issues/2022-08-28/wxt-bootstrap-blog-listing-3306505-2.patch"
+            },
+            "drupalwxt/wxt": {
+                 "3306505 - Blog listing page": "https://www.drupal.org/files/issues/2022-08-28/wxt-update-blog-listing-page-3306505-2.patch"
+            }
+        },
         "patches-ignore": {
             "acquia/lightning": {
                 "drupal/core": {
