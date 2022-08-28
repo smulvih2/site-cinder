@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - page_manager.page.blog
-    - system.menu.account
     - views.view.blog
   module:
     - panels
-    - system
     - views
 _core:
   default_config_hash: oG5s2CRmtm691lO0ffqEhNyW5B00_ok8YAf_LISJ__I
@@ -30,38 +28,28 @@ variant_settings:
       context_mapping: {  }
       views_label: ''
       items_per_page: '5'
-      region: left
+      region: main
       weight: 1
       uuid: eb20fa55-8b1c-40c5-bbd5-86510c1ce56e
       style:
         plugin: panels_default
-    4f5bcbcb-f607-4e0d-b321-974260f72645:
-      id: 'system_menu_block:account'
-      label: 'User account menu'
-      label_display: visible
-      provider: system
-      context_mapping: {  }
-      level: 1
-      depth: 0
-      expand_all_items: false
-      region: right
-      weight: 1
-      uuid: 4f5bcbcb-f607-4e0d-b321-974260f72645
-      style:
-        plugin: panels_list
-    60c2bd47-f06f-4851-a1cc-06520911cc5b:
-      id: 'views_block:blog-blog_block'
+    091683b1-7dc4-481a-a23b-7c6888b16f72:
+      id: 'views_block:blog-block_latest'
       label: ''
-      label_display: visible
+      label_display: '0'
       provider: views
       context_mapping: {  }
       views_label: ''
       items_per_page: none
-      region: right
-      weight: 2
-      uuid: 60c2bd47-f06f-4851-a1cc-06520911cc5b
+      region: main
+      weight: 0
+      uuid: 091683b1-7dc4-481a-a23b-7c6888b16f72
+      css_classes:
+        - ''
+      html_id: ''
+      css_styles: ''
   page_title: Blog
-  layout: bs_2col_stacked
+  layout: bs_1col
   layout_settings:
     label: ''
     layout:
@@ -71,27 +59,7 @@ variant_settings:
       add_layout_class: 1
       attributes: ''
     regions:
-      top:
-        wrapper: div
-        classes:
-          col-sm-12: col-sm-12
-        add_region_classes: 1
-        attributes: ''
-      left:
-        wrapper: div
-        classes:
-          col-xs-12: col-xs-12
-          col-md-8: col-md-8
-        add_region_classes: 1
-        attributes: ''
-      right:
-        wrapper: div
-        classes:
-          col-xs-12: col-xs-12
-          col-md-4: col-md-4
-        add_region_classes: 1
-        attributes: ''
-      bottom:
+      main:
         wrapper: div
         classes:
           col-sm-12: col-sm-12
@@ -100,7 +68,8 @@ variant_settings:
   builder: ipe
   storage_type: page_manager
   storage_id: blog-panels_variant-0
-  css_classes: {  }
+  css_classes:
+    - ''
   html_id: ''
   css_styles: ''
 page: blog

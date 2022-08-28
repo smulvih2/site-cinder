@@ -6,8 +6,6 @@ display:
           submit_button: Appliquer
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       pager:
         options:
           expose:
@@ -20,8 +18,7 @@ display:
             first: '« Premier'
             last: 'Dernier »'
       fields:
-        title:
-          separator: ', '
+        title: {  }
   blog_block:
     display_title: Bloc
   blog_user_all:
@@ -36,3 +33,11 @@ display:
         uid:
           exception:
             title: Tout
+  block_all:
+    display_options:
+      empty:
+        area:
+          content:
+            value: "<p>Aucun contenu de blog n'a été créé.</p>\r\n"
+            format: rich_text
+label: Blogue
