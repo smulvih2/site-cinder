@@ -15,7 +15,7 @@ header .logo img {
   opacity: 0.95;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   /* line 22, ../sass/components/_global.scss */
   header .logo {
     margin: -20px 0px 0px 0px;

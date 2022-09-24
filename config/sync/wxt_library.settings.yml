@@ -3,8 +3,8 @@ _core:
 theme:
   visibility: 1
   themes:
-    cinder: cinder
     wxt_bootstrap: wxt_bootstrap
+    cinder: cinder
 url:
   visibility: 0
   pages:
@@ -26,3 +26,5 @@ files:
     js: js
 wxt:
   theme: theme-gcweb
+  intranet_style: 0
+  menu_type: 1

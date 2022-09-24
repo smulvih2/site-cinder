@@ -95,10 +95,14 @@
         },
         "patches": {
             "drupal/wxt_bootstrap": {
-                "3306505 - Blog listing page": "https://www.drupal.org/files/issues/2022-08-28/wxt-bootstrap-blog-listing-3306505-2.patch"
+                "3306505 - Blog listing page": "https://www.drupal.org/files/issues/2022-08-28/wxt-bootstrap-blog-listing-3306505-2.patch",
+                "3310969 - horizontal main menu in GCWeb": "https://www.drupal.org/files/issues/2022-09-21/wxt-bootstrap-horizontal-main-menu-gcweb-3310969-4.patch"
             },
             "drupalwxt/wxt": {
                  "3306505 - Blog listing page": "https://www.drupal.org/files/issues/2022-08-28/wxt-update-blog-listing-page-3306505-2.patch"
+            },
+            "drupal/wxt_library": {
+                "3310969 - horizontal main menu in GCWeb": "https://www.drupal.org/files/issues/2022-09-21/wxt-library-horizontal-main-menu-gcweb-3310969-4.patch"
             }
         },
         "patches-ignore": {
