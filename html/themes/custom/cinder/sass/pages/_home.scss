@@ -1,0 +1,15 @@
+// Home
+
+.home {
+  .home-your-gov {
+  	background-image: url(/themes/custom/cinder/images/cinder-blog.jpg);  
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home {
+	  .home-your-gov {
+	  	background-image: none;  
+	  }
+  }
+}
