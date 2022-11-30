@@ -6,6 +6,7 @@ dependencies:
     - comment
     - fontawesome
     - media
+    - search
     - shortcut
     - system
 _core:
@@ -21,4 +22,5 @@ permissions:
   - 'access shortcuts'
   - 'access user profiles'
   - 'post comments'
+  - 'search content'
   - 'view media'

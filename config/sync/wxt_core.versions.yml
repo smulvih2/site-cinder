@@ -98,6 +98,7 @@ password_policy_length: 3.1.0
 path: 9.3.21
 path_alias: 9.3.21
 pathauto: 1.11.0
+search: 9.3.22
 search_api: 1.25.0
 search_api_db: 1.25.0
 shortcut: 9.3.21

@@ -5,6 +5,7 @@ dependencies:
   module:
     - comment
     - media
+    - search
     - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
@@ -16,4 +17,5 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access user profiles'
+  - 'search content'
   - 'view media'
