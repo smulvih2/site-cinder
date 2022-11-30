@@ -27,6 +27,8 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 2
     region: content
@@ -42,3 +44,4 @@ hidden:
   langcode: true
   member_for: true
   name: true
+  search_api_excerpt: true

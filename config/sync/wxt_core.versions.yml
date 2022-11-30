@@ -83,6 +83,7 @@ metatag_views: 1.21.0
 migrate: 9.3.21
 migrate_plus: 5.3.0
 migrate_tools: 5.1.0
+mysql: 9.4.8
 node: 9.3.21
 options: 9.3.21
 page_manager: 4.0.0-beta6

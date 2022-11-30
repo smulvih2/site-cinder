@@ -630,6 +630,8 @@ display:
           settings:
             image_link: ''
             image_style: blog_spotlight
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1015,6 +1017,8 @@ display:
           settings:
             image_link: content
             image_style: small
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
