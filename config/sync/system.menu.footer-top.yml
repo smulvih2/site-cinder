@@ -1,0 +1,8 @@
+uuid: be41eda2-cb2f-4fdd-93de-3ae8006b0df9
+langcode: en
+status: true
+dependencies: {  }
+id: footer-top
+label: 'Footer top'
+description: 'Top footer menu.'
+locked: false

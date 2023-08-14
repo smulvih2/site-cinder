@@ -16,6 +16,7 @@ module:
   breakpoint: 0
   button_link: 0
   ckeditor: 0
+  ckeditor4_codemirror: 0
   ckeditor_abbreviation: 0
   ckeditor_codemirror: 0
   ckeditor_details: 0
@@ -131,7 +132,6 @@ module:
   wxt_ext_book: 0
   wxt_ext_breadcrumb: 0
   wxt_ext_comment: 0
-  wxt_ext_config: 0
   wxt_ext_editor: 0
   wxt_ext_fontawesome: 0
   wxt_ext_group: 0

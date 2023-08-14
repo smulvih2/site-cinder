@@ -1254,7 +1254,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: '{{ arguments.uid }}''s blog'
+          title: "{{ arguments.uid }}'s blog"
           default_argument_type: fixed
           default_argument_options:
             argument: ''
@@ -1359,7 +1359,7 @@ display:
             title_enable: false
             title: All
           title_enable: true
-          title: '{{ arguments.uid }}''s blog'
+          title: "{{ arguments.uid }}'s blog"
           default_argument_type: fixed
           default_argument_options:
             argument: ''

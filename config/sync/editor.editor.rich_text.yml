@@ -68,20 +68,22 @@ settings:
       linkit_enabled: true
       linkit_profile: default
     codemirror:
-      enable: true
+      enable: 1
+      startupMode: wysiwyg
       mode: htmlmixed
       theme: monokai
-      lineNumbers: true
-      lineWrapping: true
-      matchBrackets: true
-      autoCloseTags: true
-      autoCloseBrackets: true
-      enableSearchTools: true
-      enableCodeFolding: true
-      enableCodeFormatting: true
-      autoFormatOnStart: true
-      autoFormatOnModeChange: true
-      autoFormatOnUncomment: true
+      options:
+        lineNumbers: 1
+        lineWrapping: 1
+        matchBrackets: 1
+        autoCloseTags: 1
+        autoCloseBrackets: 1
+        enableSearchTools: 1
+        enableCodeFolding: 1
+        enableCodeFormatting: 1
+        autoFormatOnStart: 1
+        autoFormatOnModeChange: 1
+        autoFormatOnUncomment: 1
 image_upload:
   status: true
   scheme: public
