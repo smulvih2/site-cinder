@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function azure_openai_install() {
+  // Assign 'use azure openai chat form' permission to the authenticated user role.
+  role_change_permissions('authenticated', ['use azure openai chat form' => TRUE]);
+}

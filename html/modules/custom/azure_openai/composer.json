@@ -1,0 +1,17 @@
+{
+  "name": "drupal/azure_openai",
+  "description": "Integrates Azure's OpenAI service within Drupal.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Stephen Mulvihill (smulvih2)",
+      "homepage": "https://www.drupal.org/u/smulvih2",
+      "role": "Maintainer"
+    }
+  ],
+  "require":{
+    "microsoft/azure-cognitiveservices-textanalytics": "*",
+    "drupal/core": "^10"
+  }
+}

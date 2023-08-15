@@ -1,0 +1,6 @@
+azure_openai:
+  version: 1.x
+  js:
+    js/azure_openai.js: {}
+  dependencies:
+    - core/jquery
