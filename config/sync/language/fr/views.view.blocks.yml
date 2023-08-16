@@ -7,14 +7,10 @@ display:
           submit_button: Appliquer
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       fields:
-        field_spotlight_media:
-          separator: ', '
-        field_image_link:
-          separator: ', '
-        info:
-          separator: ', '
-        body:
-          separator: ', '
+        nothing:
+          alter:
+            text: "<section class=\"gc-nttvs\">\r\n<a href=\"{{ field_image_link }}\" class=\"gl-features\">\r\n{{ field_spotlight_media }} \r\n<h4>{{ info }}</h4>\r\n</a>\r\n{{ body }}\r\n</section>"
+  block_2:
+    display_options:
+      title: 'Projets Gouvernementaux'

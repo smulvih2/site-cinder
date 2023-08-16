@@ -5,8 +5,10 @@ dependencies:
   config:
     - block_content.type.spotlight
     - field.field.block_content.spotlight.body
+    - field.field.block_content.spotlight.field_link
     - field.field.block_content.spotlight.field_spotlight_media
   module:
+    - link
     - text
 _core:
   default_config_hash: b-TpyBlU_b89yEcxelckhv-cpKaiVC_X3glZ7kCszVU
@@ -22,6 +24,18 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_spotlight_media:
     type: entity_reference_entity_view
     label: hidden
@@ -33,3 +47,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

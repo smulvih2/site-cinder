@@ -5,8 +5,10 @@ dependencies:
   config:
     - block_content.type.spotlight
     - field.field.block_content.spotlight.body
+    - field.field.block_content.spotlight.field_link
     - field.field.block_content.spotlight.field_spotlight_media
   module:
+    - link
     - media_library
     - text
 _core:
@@ -24,6 +26,14 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 27
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   field_spotlight_media:
     type: media_library_widget
