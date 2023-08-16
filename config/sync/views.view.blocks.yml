@@ -7,16 +7,7 @@ dependencies:
     - field.storage.block_content.body
     - field.storage.block_content.field_spotlight_media
     - field.storage.media.field_image_link
-    - block_content.type.spotlight
-    - field.storage.block_content.body
-    - field.storage.block_content.field_spotlight_media
-    - field.storage.media.field_image_link
   module:
-    - block_content
-    - link
-    - media
-    - text
-    - views_bootstrap
     - block_content
     - entityqueue
     - link
@@ -568,13 +559,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - url
       tags:
-        - 'config:field.storage.block_content.body'
-        - 'config:field.storage.block_content.field_spotlight_media'
-        - 'config:field.storage.media.field_image_link'
         - 'config:field.storage.block_content.body'
         - 'config:field.storage.block_content.field_spotlight_media'
         - 'config:field.storage.media.field_image_link'
@@ -591,14 +577,9 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
         - 'languages:language_interface'
         - url
       tags:
-        - 'config:field.storage.block_content.body'
-        - 'config:field.storage.block_content.field_spotlight_media'
-        - 'config:field.storage.media.field_image_link'
         - 'config:field.storage.block_content.body'
         - 'config:field.storage.block_content.field_spotlight_media'
         - 'config:field.storage.media.field_image_link'
@@ -608,7 +589,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      title: 'Government Initiatives'
+      title: 'Government Projects'
       fields:
         field_spotlight_media:
           id: field_spotlight_media
@@ -924,7 +905,9 @@ display:
       display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       block_description: Spotlight
     cache_metadata:
       max-age: -1
@@ -935,4 +918,3 @@ display:
         - 'config:field.storage.block_content.body'
         - 'config:field.storage.block_content.field_spotlight_media'
         - 'config:field.storage.media.field_image_link'
-core_version_requirement: '^8.8 || ^9'
