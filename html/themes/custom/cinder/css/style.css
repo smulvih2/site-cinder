@@ -35,22 +35,27 @@ header .logo img {
 }
 
 /* line 11, ../sass/components/_global.scss */
+.gc-main-footer {
+  padding-top: 3em;
+}
+
+/* line 15, ../sass/components/_global.scss */
 .cinder-section {
   font-size: 0.8em;
 }
 
-/* line 15, ../sass/components/_global.scss */
+/* line 19, ../sass/components/_global.scss */
 .header-rwd {
   opacity: 0.95;
 }
 
 @media (min-width: 992px) {
-  /* line 22, ../sass/components/_global.scss */
+  /* line 26, ../sass/components/_global.scss */
   header .logo {
     margin: -20px 0px 0px 0px;
   }
 }
-/* line 28, ../sass/components/_global.scss */
+/* line 32, ../sass/components/_global.scss */
 #wb-info .brand img {
   height: unset;
   max-width: 100%;
