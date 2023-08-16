@@ -1,0 +1,29 @@
+uuid: 3af46c2a-85af-4e38-b705-593a835e3596
+langcode: en
+status: true
+dependencies:
+  module:
+    - azure_openai
+    - system
+    - wxt_ext_blocks
+  theme:
+    - cinder
+third_party_settings:
+  wxt_ext_blocks:
+    display_title_invisible: 0
+id: azureopenaichatblock
+theme: cinder
+region: content
+weight: 0
+provider: null
+plugin: azure_openai_chat_block
+settings:
+  id: azure_openai_chat_block
+  label: 'Explore the Government of Canada'
+  label_display: '0'
+  provider: azure_openai
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /chat-goc

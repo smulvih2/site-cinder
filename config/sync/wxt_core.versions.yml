@@ -1,6 +1,7 @@
 admin_toolbar: 2.5.0
 admin_toolbar_links_access_filter: 2.5.0
 admin_toolbar_tools: 2.5.0
+azure_openai: 0.0.0
 backup_migrate: 5.0.1
 big_pipe: 9.3.21
 blazy: 2.13.0
@@ -19,6 +20,8 @@ ckeditor_codemirror: 2.4.0
 ckeditor_details: 2.0.3
 comment: 9.3.21
 config: 9.3.21
+config_filter: 2.4.0
+config_ignore: 2.4.0
 config_rewrite: 1.4.0
 config_translation: 9.3.21
 content_moderation: 9.3.21

@@ -4,6 +4,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
+  azure_openai: 0
   backup_migrate: 0
   big_pipe: 0
   blazy: 0
@@ -22,6 +23,8 @@ module:
   ckeditor_details: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_ignore: 0
   config_rewrite: 0
   config_translation: 0
   content_moderation: 0

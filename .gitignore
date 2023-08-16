@@ -12,9 +12,17 @@ html/themes/contrib
 !html/themes/custom
 !html/themes/custom/
 !html/themes/custom/*
+
+html/modules/*
+html/modules/contrib
+!html/modules
+!html/modules/custom
+!html/modules/custom/
+!html/modules/custom/*
 vendor
 */*/*/vendor
 */*/vendor
+config/sync/azure_openai.config.yml
 
 # Ignore Development Files
 compass_app_log.txt

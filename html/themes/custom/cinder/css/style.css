@@ -1,4 +1,33 @@
 /* Styles */
+/* Chat */
+/* line 4, ../sass/components/_chat.scss */
+#azure-openai-chat-form .form-item-user-prompt {
+  display: inline-block;
+}
+
+/* line 9, ../sass/components/_chat.scss */
+#cinder-chatbot-wrapper {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-top: 15px;
+  min-height: 450px;
+}
+/* line 16, ../sass/components/_chat.scss */
+#cinder-chatbot-wrapper .group:not(:first-child) {
+  margin-top: 15px;
+  border-top: 1px solid #e3e3e3;
+  padding-top: 15px;
+}
+/* line 22, ../sass/components/_chat.scss */
+#cinder-chatbot-wrapper .group .prompt {
+  font-weight: bold;
+}
+/* line 26, ../sass/components/_chat.scss */
+#cinder-chatbot-wrapper .group .response {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
 /* Global styles */
 /* line 5, ../sass/components/_global.scss */
 header .logo img {

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - azure_openai
     - comment
     - media
     - search
@@ -18,4 +19,5 @@ permissions:
   - 'access content'
   - 'access user profiles'
   - 'search content'
+  - 'use azure openai chat form'
   - 'view media'
