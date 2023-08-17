@@ -9,6 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\azure_openai\Service\AzureOpenAIService;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
+use Drupal\filter\FilterPluginCollection;
 
 class AzureOpenAIChatForm extends FormBase {
 
@@ -65,9 +66,16 @@ class AzureOpenAIChatForm extends FormBase {
     // Call the service to make the Azure OpenAI request.
     $azure_response = $this->azureOpenAIService->makeAzureOpenAICall($user_prompt);
 
+    // The text processing filters service.
+    $manager = \Drupal::service('plugin.manager.filter');
+    $filter_collection = new FilterPluginCollection($manager, []);
+    $filter = $filter_collection->get('filter_url');
+    // Applying filter to convert links.
+    $result = _filter_url($azure_response, $filter);
+
     $output = '<div class="group">';
     $output .= '<div class="prompt">' . $user_prompt . '</div>';
-    $output .= '<div class="response">' . $azure_response . '</div>';
+    $output .= '<div class="response">' . $result . '</div>';
     $output .= '</div>';
 
     // Create an AJAX response.
