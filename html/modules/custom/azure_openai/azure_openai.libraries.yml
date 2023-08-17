@@ -1,6 +1,8 @@
 azure_openai:
   version: 1.x
   js:
-    js/azure_openai.js: {}
+    js/azure_openai.js: { preprocess: false, minified: false }
   dependencies:
     - core/jquery
+    - core/drupal
+    - core/once

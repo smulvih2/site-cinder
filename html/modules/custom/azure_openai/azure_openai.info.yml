@@ -2,5 +2,3 @@ name: Azure OpenAI
 type: module
 description: Integrates Azure's OpenAI service into Drupal.
 core_version_requirement: ^10
-libraries:
-  - azure_openai/azure_openai

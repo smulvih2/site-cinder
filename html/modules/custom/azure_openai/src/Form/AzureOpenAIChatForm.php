@@ -8,7 +8,7 @@ use Drupal\Core\Messenger\MessengerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\azure_openai\Service\AzureOpenAIService;
 use Drupal\Core\Ajax\AjaxResponse;
-use Drupal\Core\Ajax\AppendCommand;
+use Drupal\Core\Ajax\HtmlCommand;
 
 class AzureOpenAIChatForm extends FormBase {
 
@@ -46,6 +46,8 @@ class AzureOpenAIChatForm extends FormBase {
       '#ajax' => [
         'callback' => [$this, 'ajaxSubmitCallback'],
         'event' => 'click',
+        'method'=>'replace',
+        'effect'=>'fade',
       ],
     ];
 
@@ -72,7 +74,7 @@ class AzureOpenAIChatForm extends FormBase {
     $response = new AjaxResponse();
 
     // Update the content of the specified <div>.
-    $response->addCommand(new AppendCommand('#cinder-chatbot-wrapper', $output));
+    $response->addCommand(new HtmlCommand('#cinder-chatbot-wrapper', $output));
 
     return $response;
   }

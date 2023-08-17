@@ -1,15 +1,16 @@
-/*(function ($, Drupal, drupalSettings) {
-  Drupal.behaviors.azureOpenAIAppendContent = {
+(function ($, Drupal, drupalSettings) {
+  Drupal.behaviors.azureOpenAI = {
     attach: function (context, settings) {
-      // Listen for the AJAX success event.
-      $(document).ajaxSuccess(function (event, xhr, settings) {
-        var data = xhr.responseJSON;
 
-        if (data && data.content) {
-          // Append the new content to the specified <div>.
-          $('#cinder-chatbot-wrapper', context).append(data.content);
+      $("#azure-openai-chat-form button.js-form-submit", context).click(function(e) {
+        var text = $('input#edit-user-prompt').val();
+
+        if (text) {
+          // Remove value from input on submit.
+          $('input#edit-user-prompt').val('');
         }
       });
+
     }
   };
-})(jQuery, Drupal, drupalSettings);*/
+})(jQuery, Drupal, drupalSettings);

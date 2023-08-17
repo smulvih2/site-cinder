@@ -10,19 +10,14 @@
   background-color: #f8f8f8;
   padding: 15px;
   margin-top: 15px;
-  min-height: 450px;
+  max-height: 450px;
+  min-height: 150px;
 }
-/* line 16, ../sass/components/_chat.scss */
-#cinder-chatbot-wrapper .group:not(:first-child) {
-  margin-top: 15px;
-  border-top: 1px solid #e3e3e3;
-  padding-top: 15px;
-}
-/* line 22, ../sass/components/_chat.scss */
+/* line 17, ../sass/components/_chat.scss */
 #cinder-chatbot-wrapper .group .prompt {
   font-weight: bold;
 }
-/* line 26, ../sass/components/_chat.scss */
+/* line 21, ../sass/components/_chat.scss */
 #cinder-chatbot-wrapper .group .response {
   padding-bottom: 15px;
   padding-top: 15px;
