@@ -2,10 +2,14 @@
   Drupal.behaviors.azureOpenAI = {
     attach: function (context, settings) {
 
+      var errorMessageDiv = $('#error-message');
+      var inputField = $('input#edit-user-prompt');
+
+      // Move the error message below the field label and above the input field.
+      errorMessageDiv.insertBefore(inputField);
+
       $("#azure-openai-chat-form button.js-form-submit", context).click(function(e) {
-        var inputField = $('input#edit-user-prompt');
         var text = inputField.val();
-        var errorMessageDiv = $('#error-message');
 
         // Remove error message.
         errorMessageDiv.empty();

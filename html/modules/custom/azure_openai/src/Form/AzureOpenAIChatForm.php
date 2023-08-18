@@ -35,6 +35,16 @@ class AzureOpenAIChatForm extends FormBase {
       '#markup' => '<div id="cinder-chatbot-wrapper"></div><div id="error-message"></div>',
     ];
 
+    $form['important'] = [
+      '#type' => 'textfield',
+      '#attributes' => [
+        'class' => [
+          'important-field',
+          'hidden'
+        ]
+      ],
+    ];
+
     $form['user_prompt'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Ask a question'),
@@ -66,24 +76,25 @@ class AzureOpenAIChatForm extends FormBase {
 
     // Get user prompt.
     $user_prompt = $form_state->getValue('user_prompt');
+    $honeypot = $form_state->getValue('important');
+
+    if (!empty($honeypot)) {
+      // Create an AJAX response.
+      $response = new AjaxResponse();
+
+      // Show an error message.
+      $error_message = '<div class="wrapper"><strong id="title1-error" class="error"><span class="label label-danger"><span class="prefix">' . t('Error') . '&nbsp;1: </span>' . t('Spam submission detected.') . '</span></strong></div>';
+      $response->addCommand(new HtmlCommand('#error-message', $error_message));
+
+      return $response;
+    }
 
     if (empty($user_prompt)) {
       // Create an AJAX response.
       $response = new AjaxResponse();
 
       // Show an error message.
-      $error_message = '<strong id="title1-error" class="error"><span class="label label-danger"><span class="prefix">Error&nbsp;1: </span>This field is required.</span></strong>';
-      $response->addCommand(new HtmlCommand('#error-message', $error_message));
-
-      return $response;
-    }
-
-    if (mb_strlen($user_prompt) > 128) {
-      // Create an AJAX response.
-      $response = new AjaxResponse();
-
-      // Show an error message.
-      $error_message = '<strong id="title1-error" class="error"><span class="label label-danger"><span class="prefix">Error&nbsp;1: </span>You have entered too many characters.</span> (' . mb_strlen($user_prompt) . ')</strong>';
+      $error_message = '<div class="wrapper"><strong id="title1-error" class="error"><span class="label label-danger"><span class="prefix">' . t('Error') . '&nbsp;1: </span>' . t('This field is required.') . '</span></strong></div>';
       $response->addCommand(new HtmlCommand('#error-message', $error_message));
 
       return $response;
