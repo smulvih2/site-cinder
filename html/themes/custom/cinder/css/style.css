@@ -10,7 +10,7 @@
 }
 /* line 12, ../sass/components/_chat.scss */
 #azure-openai-chat-form .form-submit {
-  margin-bottom: 5px;
+  margin-bottom: 70px;
 }
 
 /* line 17, ../sass/components/_chat.scss */
@@ -39,6 +39,7 @@
   /* line 42, ../sass/components/_chat.scss */
   #azure-openai-chat-form .form-submit {
     width: 100%;
+    margin-bottom: 15px;
   }
 }
 /* Global styles */

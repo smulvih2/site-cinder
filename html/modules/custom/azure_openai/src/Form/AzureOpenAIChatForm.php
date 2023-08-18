@@ -32,12 +32,13 @@ class AzureOpenAIChatForm extends FormBase {
   public function buildForm(array $form, FormStateInterface $form_state) {
     // AJAX wrapper.
     $form['markup'] = [
-      '#markup' => '<div id="cinder-chatbot-wrapper"></div>',
+      '#markup' => '<div id="cinder-chatbot-wrapper"></div><div id="error-message"></div>',
     ];
 
     $form['user_prompt'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Ask a question'),
+      '#description' => $this->t('Please provide a question with a maximum of 128 characters.'),
       '#required' => TRUE,
     ];
 
@@ -60,8 +61,33 @@ class AzureOpenAIChatForm extends FormBase {
   }
 
   public function ajaxSubmitCallback(array &$form, FormStateInterface $form_state) {
+    // Clear any existing messages.
+    \Drupal::messenger()->deleteAll();
+
     // Get user prompt.
     $user_prompt = $form_state->getValue('user_prompt');
+
+    if (empty($user_prompt)) {
+      // Create an AJAX response.
+      $response = new AjaxResponse();
+
+      // Show an error message.
+      $error_message = '<strong id="title1-error" class="error"><span class="label label-danger"><span class="prefix">Error&nbsp;1: </span>This field is required.</span></strong>';
+      $response->addCommand(new HtmlCommand('#error-message', $error_message));
+
+      return $response;
+    }
+
+    if (mb_strlen($user_prompt) > 128) {
+      // Create an AJAX response.
+      $response = new AjaxResponse();
+
+      // Show an error message.
+      $error_message = '<strong id="title1-error" class="error"><span class="label label-danger"><span class="prefix">Error&nbsp;1: </span>You have entered too many characters.</span> (' . mb_strlen($user_prompt) . ')</strong>';
+      $response->addCommand(new HtmlCommand('#error-message', $error_message));
+
+      return $response;
+    }
 
     // Call the service to make the Azure OpenAI request.
     $azure_response = $this->azureOpenAIService->makeAzureOpenAICall($user_prompt);
