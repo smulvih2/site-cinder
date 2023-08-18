@@ -4,8 +4,16 @@
 #azure-openai-chat-form .form-item-user-prompt {
   display: inline-block;
 }
+/* line 8, ../sass/components/_chat.scss */
+#azure-openai-chat-form #edit-user-prompt {
+  width: 100%;
+}
+/* line 12, ../sass/components/_chat.scss */
+#azure-openai-chat-form .form-submit {
+  margin-bottom: 5px;
+}
 
-/* line 9, ../sass/components/_chat.scss */
+/* line 17, ../sass/components/_chat.scss */
 #cinder-chatbot-wrapper {
   background-color: #f8f8f8;
   padding: 15px;
@@ -13,16 +21,26 @@
   max-height: 450px;
   min-height: 150px;
 }
-/* line 17, ../sass/components/_chat.scss */
+/* line 25, ../sass/components/_chat.scss */
 #cinder-chatbot-wrapper .group .prompt {
   font-weight: bold;
 }
-/* line 21, ../sass/components/_chat.scss */
+/* line 29, ../sass/components/_chat.scss */
 #cinder-chatbot-wrapper .group .response {
   padding-bottom: 15px;
   padding-top: 15px;
 }
 
+@media (max-width: 768px) {
+  /* line 38, ../sass/components/_chat.scss */
+  #azure-openai-chat-form .form-item-user-prompt {
+    display: block;
+  }
+  /* line 42, ../sass/components/_chat.scss */
+  #azure-openai-chat-form .form-submit {
+    width: 100%;
+  }
+}
 /* Global styles */
 /* line 5, ../sass/components/_global.scss */
 header .logo img {
