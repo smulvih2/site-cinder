@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\azure_openai\Form;
+namespace Drupal\azure_ai_services\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;

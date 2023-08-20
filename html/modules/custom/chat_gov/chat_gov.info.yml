@@ -1,0 +1,6 @@
+name: ChatGov tool
+type: module
+description: ChatGov tool - demo of Azure OpenAI.
+core_version_requirement: ^10
+dependencies:
+  - azure_ai_services:azure_ai_services

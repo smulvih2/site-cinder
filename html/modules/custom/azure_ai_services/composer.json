@@ -1,6 +1,6 @@
 {
-  "name": "drupal/azure_openai",
-  "description": "Integrates Azure's OpenAI service within Drupal.",
+  "name": "drupal/azure_ai_services",
+  "description": "Integrates Azure's AI cognitive services within Drupal.",
   "type": "drupal-module",
   "license": "GPL-2.0-or-later",
   "authors": [
@@ -11,7 +11,6 @@
     }
   ],
   "require":{
-    "microsoft/azure-cognitiveservices-textanalytics": "*",
     "drupal/core": "^10"
   }
 }

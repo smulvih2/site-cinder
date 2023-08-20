@@ -1,0 +1,4 @@
+services:
+  azure_ai_services.chat_completions:
+    class: Drupal\azure_ai_services\Service\AzureOpenAIService
+    arguments: ['@config.factory']

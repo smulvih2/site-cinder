@@ -1,0 +1,4 @@
+name: Azure AI Services
+type: module
+description: Integrates Azure's AI services into Drupal.
+core_version_requirement: ^10

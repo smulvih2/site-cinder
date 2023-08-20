@@ -1,12 +1,12 @@
 <?php
 
-namespace Drupal\azure_openai\Form;
+namespace Drupal\chat_gov\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Messenger\MessengerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Drupal\azure_openai\Service\AzureOpenAIService;
+use Drupal\azure_ai_services\Service\AzureOpenAIService;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
 use Drupal\filter\FilterPluginCollection;
@@ -21,7 +21,7 @@ class AzureOpenAIChatForm extends FormBase {
 
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('azure_openai.chat_completions')
+      $container->get('azure_ai_services.chat_completions')
     );
   }
 
@@ -101,7 +101,7 @@ class AzureOpenAIChatForm extends FormBase {
     }
 
     // Call the service to make the Azure OpenAI request.
-    $azure_response = $this->azureOpenAIService->makeAzureOpenAICall($user_prompt);
+    $azure_response = $this->azureOpenAIService->makeAzureOpenAIChatCompletion($user_prompt);
 
     // The text processing filters service.
     $manager = \Drupal::service('plugin.manager.filter');

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - chat_gov
     - comment
     - fontawesome
     - media
@@ -23,4 +24,5 @@ permissions:
   - 'access user profiles'
   - 'post comments'
   - 'search content'
+  - 'use azure openai chat form'
   - 'view media'

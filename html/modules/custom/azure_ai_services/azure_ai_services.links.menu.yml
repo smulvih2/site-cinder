@@ -1,0 +1,6 @@
+azure_ai_services.openai:
+  title: 'Azure OpenAI settings'
+  description: 'Azure OpenAI settings'
+  parent: system.admin_config_services
+  route_name: azure_ai_services.openai_settings
+  weight: 1

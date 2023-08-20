@@ -4,7 +4,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
-  azure_openai: 0
+  azure_ai_services: 0
   backup_migrate: 0
   big_pipe: 0
   blazy: 0
@@ -16,6 +16,7 @@ module:
   bootstrap_layouts: 0
   breakpoint: 0
   button_link: 0
+  chat_gov: 0
   ckeditor: 0
   ckeditor4_codemirror: 0
   ckeditor_abbreviation: 0

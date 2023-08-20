@@ -1,5 +1,5 @@
 (function ($, Drupal, drupalSettings) {
-  Drupal.behaviors.azureOpenAI = {
+  Drupal.behaviors.chatGov = {
     attach: function (context, settings) {
 
       var errorMessageDiv = $('#error-message');

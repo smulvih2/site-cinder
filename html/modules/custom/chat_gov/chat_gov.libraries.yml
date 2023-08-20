@@ -1,7 +1,7 @@
-azure_openai:
+chat_gov:
   version: 1.x
   js:
-    js/azure_openai.js: { preprocess: false, minified: false }
+    js/chat_gov.js: { preprocess: false, minified: false }
   dependencies:
     - core/jquery
     - core/drupal

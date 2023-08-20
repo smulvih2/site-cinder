@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\azure_openai\Service;
+namespace Drupal\azure_ai_services\Service;
 
 use GuzzleHttp\Client;
 use Drupal\Core\Config\ConfigFactoryInterface;
@@ -13,7 +13,7 @@ class AzureOpenAIService {
     $this->configFactory = $configFactory;
   }
 
-  public function makeAzureOpenAICall($user_prompt) {
+  public function makeAzureOpenAIChatCompletion($user_prompt) {
     // Fetch Azure OpenAI configuration from Drupal configuration.
     $config = $this->configFactory->get('azure_openai.config');
     $resource_name = $config->get('resource_name');

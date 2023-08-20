@@ -1,0 +1,8 @@
+azure_ai_services.openai_settings:
+  path: '/admin/config/azure-openai-settings'
+  defaults:
+    _title: 'Azure OpenAI settings'
+    _form: 'Drupal\azure_ai_services\Form\AzureOpenAISettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+

@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * This is the chat_gov module.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function chat_gov_preprocess_page(&$variables) {
+  $variables['#attached']['library'][] = 'chat_gov/chat_gov';
+}

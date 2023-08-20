@@ -3,7 +3,8 @@
 /**
  * Implements hook_install().
  */
-function azure_openai_install() {
+function chat_gov_install() {
   // Assign 'use azure openai chat form' permission to the authenticated user role.
-  role_change_permissions('authenticated', ['use azure openai chat form' => TRUE]);
+  user_role_grant_permissions('authenticated', ['use azure openai chat form']);
 }
+

@@ -1,9 +1,9 @@
-uuid: 3af46c2a-85af-4e38-b705-593a835e3596
+uuid: 1d197673-10d9-4b1e-86a6-9cadff343e0f
 langcode: en
 status: true
 dependencies:
   module:
-    - azure_openai
+    - chat_gov
     - system
     - wxt_ext_blocks
   theme:
@@ -19,9 +19,9 @@ provider: null
 plugin: azure_openai_chat_block
 settings:
   id: azure_openai_chat_block
-  label: 'Explore the Government of Canada'
+  label: 'Azure OpenAI Chat'
   label_display: '0'
-  provider: azure_openai
+  provider: chat_gov
 visibility:
   request_path:
     id: request_path
