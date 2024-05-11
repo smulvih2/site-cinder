@@ -6,21 +6,24 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "cweagans/composer-patches": "^1.6.0",
-        "drupal/core-composer-scaffold": "^10.0",
-        "drupalwxt/wxt": "5.0.x-dev",
+        "composer/installers": "^2.1",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/core-composer-scaffold": "^10.2",
+        "drupalwxt/wxt": "5.2.2",
         "drupal/backup_migrate": "^5.0",
         "drupal/devel": "^5.1",
         "drupal/blog": "3.1.2 as 3.0.1",
         "drupal/config_ignore": "^2.4"
     },
     "require-dev": {
-        "drupal/core-dev": "^10.0",
+        "drupal/core-dev": "^10.2",
         "drupal/drupal-extension": "5.0.0-alpha1",
-        "drush/drush": ">=12.1.0",
+        "drush/drush": "^12.4.3",
         "oomphinc/composer-installers-extender": "^1.1 || ^2",
         "squizlabs/php_codesniffer": "3.*",
-        "phpspec/prophecy-phpunit": "^2"
+        "phpspec/prophecy-phpunit": "^2",
+        "vlucas/phpdotenv": "^5.1",
+        "webflo/drupal-finder": "^1.2"
     },
     "config": {
         "secure-http": false,
@@ -34,7 +37,8 @@
             "cweagans/composer-patches": true,
             "oomphinc/composer-installers-extender": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
         }
     },
     "repositories": [
@@ -96,24 +100,7 @@
             "drupal/core": "-p2"
         },
         "patches": { },
-        "patches-ignore": {
-            "acquia/lightning": {
-                "drupal/core": {
-                    "1356276 - Allow profiles to define a base/parent profile and load them in the correct order":
-                    "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent":
-                    "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
-                }
-            },
-            "drupal/lightning_core": {
-                "drupal/core": {
-                    "1356276 - Allow profiles to define a base/parent profile and load them in the correct order":
-                    "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent":
-                    "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
-                }
-            }
-        }
+        "patches-ignore": { }
     },
     "autoload": {
         "classmap": [
