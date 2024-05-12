@@ -57,6 +57,7 @@ permissions:
   - 'delete content translations'
   - 'delete own blog_post content'
   - 'delete own book content'
+  - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
   - 'dropzone upload files'

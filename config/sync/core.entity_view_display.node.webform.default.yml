@@ -10,7 +10,6 @@ dependencies:
     - text
     - user
     - webform
-third_party_settings: {  }
 _core:
   default_config_hash: 3r1i0UMUbeNHhvmiqHDYznoS4G9XR1jq6lQ49r80lDE
 id: node.webform.default
@@ -24,6 +23,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
     region: content
   links:
     settings: {  }
@@ -40,3 +44,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

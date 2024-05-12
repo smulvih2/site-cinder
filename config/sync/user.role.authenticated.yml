@@ -2,9 +2,13 @@ uuid: 9e97e58b-8125-464e-b89a-51d7b7d300a5
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - chat_gov
     - comment
+    - file
+    - filter
     - fontawesome
     - media
     - search
@@ -22,7 +26,9 @@ permissions:
   - 'access fontawesome additional settings'
   - 'access shortcuts'
   - 'access user profiles'
+  - 'delete own files'
   - 'post comments'
   - 'search content'
   - 'use azure openai chat form'
+  - 'use text format webform_default'
   - 'view media'

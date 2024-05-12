@@ -42,6 +42,7 @@ permissions:
   - 'create content translations'
   - 'delete all revisions'
   - 'delete content translations'
+  - 'delete own files'
   - 'dropzone upload files'
   - 'edit own comments'
   - 'revert all revisions'
