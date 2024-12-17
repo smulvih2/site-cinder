@@ -9,10 +9,7 @@ _core:
 id: department-web_content_manager
 label: 'Web Content Manager'
 weight: 102
-internal: false
-audience: member
 group_type: department
-permissions_ui: true
 permissions:
   - 'access group_node overview'
   - 'create group_node:blog_post content'
@@ -43,3 +40,5 @@ permissions:
   - 'view group_node:consultation entity'
   - 'view unpublished group_node:blog_post entity'
   - 'view unpublished group_node:consultation entity'
+admin: false
+scope: individual

@@ -9,10 +9,7 @@ _core:
 id: department-member
 label: Member
 weight: -100
-internal: true
-audience: member
 group_type: department
-permissions_ui: true
 permissions:
   - 'access group_node overview'
   - 'administer members'
@@ -35,3 +32,6 @@ permissions:
   - 'view group_node:consultation entity'
   - 'view unpublished group_node:blog_post entity'
   - 'view unpublished group_node:consultation entity'
+admin: false
+scope: insider
+global_role: authenticated

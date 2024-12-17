@@ -73,9 +73,10 @@ filters:
     status: true
     weight: -40
     settings:
-      footnotes_collapse: '0'
-      footnotes_html: '0'
-      footnotes_css: '0'
+      footnotes_collapse: false
+      footnotes_css: false
+      footnotes_dialog: false
+      footnotes_footer_disable: false
   filter_html:
     id: filter_html
     provider: filter
@@ -171,15 +172,15 @@ filters:
     settings:
       type: wxt
       auto: ''
-      block: '0'
-      exclude_above: '1'
+      block: false
+      exclude_above: true
   token_filter:
     id: token_filter
     provider: token_filter
     status: true
     weight: -49
     settings:
-      replace_empty: '0'
+      replace_empty: false
   url_embed:
     id: url_embed
     provider: url_embed
@@ -199,10 +200,10 @@ filters:
     status: false
     weight: -32
     settings:
-      responsive: '1'
-      replace_classes: '1'
-      replace_all_classes: '1'
+      responsive: true
+      replace_classes: true
+      replace_all_classes: true
       classes: 'wb-tables table'
       whitelist_classes: ''
-      add_datatable_attribute: '0'
+      add_datatable_attribute: false
       datatable_options: ''

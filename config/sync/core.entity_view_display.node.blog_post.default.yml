@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.blog_post.field_blog_tags
     - field.field.node.blog_post.field_image
     - field.field.node.blog_post.field_meta_tags
+    - image.style.large
     - node.type.blog_post
   module:
     - image
@@ -45,7 +46,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -54,6 +55,7 @@ content:
 hidden:
   field_avatar_image: true
   field_meta_tags: true
+  footnotes_group: true
   langcode: true
   links: true
   search_api_excerpt: true

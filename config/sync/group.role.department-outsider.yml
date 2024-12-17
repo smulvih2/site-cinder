@@ -9,11 +9,11 @@ _core:
 id: department-outsider
 label: Outsider
 weight: -101
-internal: true
-audience: outsider
 group_type: department
-permissions_ui: true
 permissions:
   - 'view group'
   - 'view group_node:blog_post entity'
   - 'view group_node:consultation entity'
+admin: false
+scope: outsider
+global_role: authenticated

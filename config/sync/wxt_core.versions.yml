@@ -66,6 +66,7 @@ jquery_ui_draggable: 1.2.0
 jquery_ui_droppable: 1.2.0
 language: 9.3.21
 layout_builder: 9.3.21
+layout_builder_expose_all_field_blocks: 10.3.6
 layout_builder_restrictions: 2.15.0
 layout_builder_st: 1.0.0-alpha2
 layout_builder_styles: 1.0.0-beta5

@@ -9,8 +9,6 @@ dependencies:
 _core:
   default_config_hash: gJevOD4IuTMkjUeonfvX0dDp0LlN3F2DBeV0z3dhQh8
 id: department-group_membership
-label: 'Department(s): Group membership'
-description: 'Adds users to groups as members.'
 group_type: department
 content_plugin: group_membership
 plugin_config:

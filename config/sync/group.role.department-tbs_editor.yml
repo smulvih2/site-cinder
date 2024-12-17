@@ -9,10 +9,7 @@ _core:
 id: department-tbs_editor
 label: 'TBS Editor'
 weight: 101
-internal: false
-audience: member
 group_type: department
-permissions_ui: true
 permissions:
   - 'access group_node overview'
   - 'create group_node:blog_post entity'
@@ -33,3 +30,5 @@ permissions:
   - 'view group_node:consultation entity'
   - 'view unpublished group_node:blog_post entity'
   - 'view unpublished group_node:consultation entity'
+admin: false
+scope: individual

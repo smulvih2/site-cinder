@@ -84,6 +84,13 @@ header .logo img {
   mix-blend-mode: multiply;
 }
 
+/* Blog */
+/* line 4, ../sass/pages/_blog.scss */
+.page-node-type-blog-post .field--name-field-image {
+  float: right;
+  padding-left: 15px;
+}
+
 /* line 4, ../sass/pages/_home.scss */
 .home .home-your-gov {
   background-image: url(/themes/custom/cinder/images/cinder-blog.jpg);
